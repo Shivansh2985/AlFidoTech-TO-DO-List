@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Template</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Blog</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="you-menu">Admin-panel</a></li>
+                <li><button id="theme-toggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="prt">
+        <div class="heading">
+            <h1>MY BLOGS</h1>
+        </div>
+
+    </div>
+    
+<!-- admin-panel -->
+<div class="admin-panel" id="admin-panel" style="display: none;">
+    <h2>Admin Panel</h2>
+    <form id="add-post-form">
+        <input type="text" id="post-title" placeholder="Post Title" required>
+        <textarea id="post-content" placeholder="Post Content" required></textarea>
+        <input type="file" id="post-image" accept="image/*" required>
+        <button type="submit">Add Post</button>
+    </form>
+    <div class="post-list">
+        <h3>Existing Posts</h3>
+        <ul id="post-list">
+            <li>Nature Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>Sports Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>Political Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>Nature Post 2 <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>WildLife Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>Army Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>Entertainment Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+            <li>Technology Post <button class="edit-post">Edit</button> <button class="delete-post">Delete</button></li>
+        </ul>
+    </div>
+    <h1>Your Posts</h1>
+    <div class="infinite-scrollerr" id="infinite-scrollerr"></div>
+</div>
+
+    <!-- Homepage -->
+    <main>
+        <section class="blog-list" id="blog-list">
+            <article class="blog-post">
+                <img src="Nature1.webp" alt="Nature">
+                <h2><a href="post.html">Nature Post</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="sport1.jpeg" alt="Sports">
+                <h2><a href="post.html">Sports Post</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit kddmn skkdf mfmvc fcmmf. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="modi.jpeg" alt="Nature">
+                <h2><a href="post.html">Political Post</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum aperiam dolorum ipsum saepe eum. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="Nature2.webp" alt="Sports">
+                <h2><a href="post.html">Nature Post 2</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="Lion.jpg" alt="Nature">
+                <h2><a href="post.html">WildLife Post</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="Army.jpg" alt="Sports">
+                <h2><a href="post.html">Army Post</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="tmkoc.avif" alt="Nature">
+                <h2><a href="post.html">Entertainment Post</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="post.html">Read more...</a></p>
+            </article>
+            <article class="blog-post">
+                <img src="tech.png" alt="Sports">
+                <h2><a href="post.html">Technology Post</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="post.html">Read more...</a></p>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div class="infinite-scroller" id="infinite-scroller"></div>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+        <p>Designed By &hearts; Shivansh Sharma</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
